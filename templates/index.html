@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Prediction of Purchase</title>
+        <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Purchase Prediction</h1>
+    <form action="/predict" method="post">
+        <LABEL>Gender:</LABEL>
+        <select type="text" id="Gender" name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select><br><br>
+
+        <label>Age:</label>
+        <input type="Number" id="Salary" name="Age" required><br><br>
+
+        <label>Salary:</label>
+        <input type="Number" id="Salary" name="Salary" required><br><br>
+
+        <button type="Submit">Predict</button>
+        <H2>Prediction Result:</H2>
+        <p>{{pred_result}}</p>
+
+        
+    
+</body>
+</html>
