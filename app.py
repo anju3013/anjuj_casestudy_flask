@@ -23,7 +23,7 @@ def predict():
     features=([[age,salary]])
     prediction=model.predict(features)
     target=prediction[0]
-    if age<18 or age>80 or salary<15000 or salary>300000:
+    if age<10 or salary<1000 :
         result="Sorry ,Input data is out of range"
     elif target==1:
         result="Yes,It is a purchase"
